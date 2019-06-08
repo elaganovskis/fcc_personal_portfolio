@@ -7,6 +7,10 @@ body {
 .wrapper {
   background-color: aquamarine;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 #welcome-section__block, #welcome-section {
@@ -18,12 +22,22 @@ body {
 
 #welcome-section {
   height: 100vh;
-  border: 1px black solid;
+}
+
+.header {
+  position: relative;
 }
 
 #navbar {
   display: flex;
   justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 100px;
+
+  background-color: green;
 }
 
 .navbar__list {
@@ -38,4 +52,117 @@ body {
 .navbar__link {
   text-decoration: none;
   color: black;
+}
+
+
+/* ----------------------------------PROJECTS---------------------------------- */
+
+#projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.projects__title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.projects__list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects__item {
+  list-style-type: none;
+  width: 27%;
+  margin-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.project__title {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.show-all {
+  text-align: center;
+}
+
+.show-all__button {
+  display: block;
+  background-color: green;
+  width: 200px;
+  height: 40px;
+  border: none;
+}
+
+.show-all__link {
+  text-decoration: none;
+  color: white;
+  padding: 10px 0;
+}
+
+
+/* -----------------------------------CONTACT-------------------------- */
+
+#contact {
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 90px 0;
+}
+
+.contact__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0;
+}
+
+.contact__item {
+  margin-left: 10px;
+  list-style-type: none;
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__link {
+  text-decoration: none;
+  color: black;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer__title {
+  width: 90vw;
+  text-align: center;
 }
